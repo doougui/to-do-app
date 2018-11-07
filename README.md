@@ -1,0 +1,1 @@
+to-do-app é um gerenciador de tarefas feito utilizando a linguagem de programação JavaScript, linguagem de marcação HTML5 e a linguagem de folhas de estilo CSS3.
