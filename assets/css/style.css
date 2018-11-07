@@ -1,24 +1,4 @@
 @font-face {
-	font-family: HankenGrotesk-Light;
-	src: url(../font/HankenGrotesk-Light.otf);
-}
-
-@font-face {
-	font-family: Crawley;
-	src: url(../font/Crawley.ttf);
-}
-
-@font-face {
-	font-family: Poppins;
-	src: url(../font/Poppins-Regular.ttf);
-}
-
-@font-face {
-	font-family: Oswald;
-	src: url(../font/Oswald-Regular.ttf);
-}
-
-@font-face {
 	font-family: Cousine;
 	src: url(../font/Cousine-Regular.ttf);
 }
@@ -29,24 +9,10 @@ body {
 	font-family: Arial;
 }
 
-.container {
-	transition: all 0.5s ease;
-}
-
 .toposmall {
 	width: 100%;
 	height: 12px;
 	background-color: #057C3A;
-	color: #FFF;
-	text-align: center;
-	font-size: 10px;
-}
-
-.toposmall-menu {
-	font-family: Arial;
-	width: 100%;
-	height: 12px;
-	background-color: #000;
 	color: #FFF;
 	text-align: center;
 	font-size: 10px;
@@ -59,17 +25,6 @@ body {
 	position: sticky;
 	top: 0;
 	z-index: 3;
-}
-
-.topo img {
-	margin-top: 5px;
-	margin-left: 5px;
-	width: 35px;
-	float: left;
-}
-
-.topo img:hover {
-	cursor: pointer;
 }
 
 .topo h2 {
@@ -110,36 +65,6 @@ body {
 	color: #FF0000;
 	position: absolute;
 	right: 10px;
-}
-
-.input {
-	width: 100%;
-	height: 70px;
-	position: fixed;
-	bottom: 0;
-	background-color: #057C3A;
-	z-index: 3;
-}
-
-.input input {
-	margin-top: 17px;
-	margin-left: 2%;
-	padding: 5px;
-	width: 68.5%;
-	height: 20px;
-	border: 2px solid #057C3A;
-	outline: none;
-	border-radius: 5px;
-}
-
-.input button {
-	margin: 0;
-	border-radius: 5px;
-	background-color: #FFF;
-	border: 2px solid #057C3A;
-	padding: 7.5px;
-	outline: none;
-	cursor: pointer;
 }
 
 .addIcon {
