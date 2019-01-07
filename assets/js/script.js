@@ -23,15 +23,27 @@ function renderTodos() {
 
 		var pos = todos.indexOf(todo);
 
-		var linkElement = document.createElement('a');
-		var linkText = document.createTextNode('Remove');
+		var removeElement = document.createElement('a');
+		var removeText = document.createTextNode('Remove');
 
-		linkElement.setAttribute('href', '#');
-		linkElement.appendChild(linkText);
+		removeElement.setAttribute('href', '#');
+		removeElement.setAttribute('class', 'remove-btn')
+		removeElement.appendChild(removeText);
 
-		liElement.appendChild(linkElement);
+		liElement.appendChild(removeElement);
 
-		linkElement.setAttribute('onclick', 'removeTodo(' + pos + ')')
+		removeElement.setAttribute('onclick', 'removeTodo(' + pos + ')')
+
+		var editElement = document.createElement('a');
+		var editText = document.createTextNode('Edit')
+
+		editElement.setAttribute('href', '#');
+		editElement.setAttribute('class', 'edit-btn')
+		editElement.appendChild(editText);
+
+		liElement.appendChild(editElement);
+
+		editElement.setAttribute('onclick', 'editTodo(' + pos + ')')
 	}
 }
 
@@ -39,10 +51,21 @@ renderTodos();
 
 function addTodo() {
 	var liText = prompt('Enter a task');
-	if (liText == '') {
+	if (liText == '' || liText == null) {
 		alert('You need to type something.');
 	} else {
 		todos.push(liText); 
+		renderTodos();
+		saveToStorage();
+	}
+}
+
+function editTodo(pos) {
+	var liText = prompt('Enter the new value');
+	if (liText == '' || liText == null) {
+		alert('You need to type something.');
+	} else {
+		todos[pos] = liText;
 		renderTodos();
 		saveToStorage();
 	}

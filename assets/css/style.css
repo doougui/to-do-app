@@ -60,11 +60,18 @@ body {
 	margin-left: -33px;
 }
 
-.tasks .task-nome li a {
+.tasks .task-nome li .remove-btn {
 	text-decoration: none;
 	color: #FF0000;
 	position: absolute;
 	right: 10px;
+}
+
+.tasks .task-nome li .edit-btn {
+	text-decoration: none;
+	color: #0000FF;
+	position: absolute;
+	right: 90px;
 }
 
 .addIcon {
