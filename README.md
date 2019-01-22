@@ -1,11 +1,11 @@
 # TO-DO APP - v0.1
 
-to-do-app é um gerenciador de tarefas feito utilizando a linguagem de programação JavaScript, linguagem de marcação HTML5 e a linguagem de folhas de estilo CSS3.
+to-do-app is a task manager made using the JavaScript programming language, HTML5 markup language, and the CSS3 style sheet language.
 
 ## Usage
 
-1. Extraia o arquivo.
-2. Abra o arquivo index.html em seu navegador.
-3. Clique no botão "+" para adicionar uma nova tarefa, no botão "Edit" para editar uma tarefa e no botão "Remove" para remover uma tarefa.
+1. Extract the file.
+2. Open the index.html file in your browser.
+3. Click the "+" button to add a new task, the "Edit" button to edit a task and the "Remove" button to remove a task.
 
-As suas tarefas ficarão armazenadas no seu local storage, portanto, as tarefas se manterão lá, mesmo que você atualize a página ou abra e feche o arquivo.
+Your tasks will be stored in your local storage, so tasks will remain there, even if you refresh the page or open and close the file.
